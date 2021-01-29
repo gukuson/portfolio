@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    color: #414141;               /* Dark gray */
+    background-color: rgb(197, 235, 216);    /* Light gray */
+    font-size: 18px;
+  }
+.page-title {
+    color: white;
+    background-color: rgb(63, 62, 62);
+    padding: 10px;
+}
+h2 {
+    width: fit-content;
+    background-color: honeydew;
+    border: 1px solid rgb(66, 61, 61);
+    padding: 5px 10px 5px 10px;
+}
+.intro{
+  color: honeydew;
+  background-color: #4A90E2;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-sizing: border-box; /* Vertical  Horizontal */
+}
+#end-page {
+    color: honeydew;
+    text-align: center;
+}
+ol {
+  list-style-type: lower-roman;
+  background-color: honeydew;
+  padding-left: 30px;
+  padding-right: 10px;
+  border: 3px solid grey;
+}
+ul {
+  list-style-type: circle;
+  background-color: honeydew;
+  padding-left: 30px;
+  padding-right: 10px;
+  border: 3px solid grey;
+}
+li.nav-bar {
+  display: inline;
+  color: white;
+  float: left;
+}
+ul.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  top: 0;
+}
+li a.nav-bar {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid #bbb;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a.nav-bar:hover {
+  background-color: #4A90E2;
+}
+.active {
+  background-color: grey;
+}
+.part-container {
+  color: black;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.part {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-section {
+  margin-bottom: 10px;
+}
+.stanlee-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .part {
+    height: fit-content;
+    margin: 10px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .part {
+    width: 50%;
+  }
+  .part-container {
+    justify-content: center;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .part{
+    width: 33.3%;
+  }
+} 
